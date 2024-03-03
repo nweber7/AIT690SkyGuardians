@@ -1,0 +1,2412 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.22.1117.1841                               -->
+<workbook original-version='18.1' source-build='2022.4.0 (20224.22.1117.1841)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Upton_Buffalo_issr2023' inline='true' name='federated.0iil8yl0vug70z12h64df012vx1w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Upton, New York_issr2023' name='textscan.0nkcqs20xp7lga1bvrkru0e67w19'>
+            <connection class='textscan' directory='C:/Users/rebec/OneDrive/Desktop/Sky Guardians' filename='Upton, New York_issr2023.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='Buffalo, NY_issr2023' name='textscan.08qxzrr1j0wdh40zv4fc103x95fd'>
+            <connection class='textscan' directory='C:/Users/rebec/OneDrive/Desktop/Sky Guardians' filename='Buffalo, NY_issr2023.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='Buffalo, NY_issr2023.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id_' />
+            <column datatype='integer' name='year' />
+            <column datatype='integer' name='month' />
+            <column datatype='integer' name='day' />
+            <column datatype='integer' name='hour' />
+            <column datatype='integer' name='reltime' />
+            <column datatype='integer' name='numlev' />
+            <column datatype='string' name='p_src' />
+            <column datatype='string' name='np_src' />
+            <column datatype='integer' name='lat' />
+            <column datatype='integer' name='lon' />
+            <column datatype='integer' name='lvltyp1' />
+            <column datatype='integer' name='lvltyp2' />
+            <column datatype='integer' name='etime' />
+            <column datatype='integer' name='press' />
+            <column datatype='string' name='pflag' />
+            <column datatype='integer' name='gph' />
+            <column datatype='string' name='zflag' />
+            <column datatype='integer' name='temp' />
+            <column datatype='string' name='tflag' />
+            <column datatype='integer' name='rh' />
+            <column datatype='integer' name='dpdp' />
+            <column datatype='integer' name='wdir' />
+            <column datatype='integer' name='wspd' />
+            <column datatype='datetime' name='date' />
+            <column datatype='integer' name='actual_hours' />
+            <column datatype='integer' name='minutes' />
+            <column datatype='integer' name='seconds' />
+            <column datatype='datetime' name='timestamp' />
+            <column datatype='real' name='temp_f' />
+            <column datatype='real' name='temp_k' />
+            <column datatype='real' name='press_alt' />
+            <column datatype='real' name='rh_ice' />
+            <column datatype='string' name='issc' />
+            <column datatype='real' name='floor' />
+            <column datatype='real' name='ceiling' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Buffalo, NY_issr2023.csv' table='[Buffalo, NY_issr2023#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='id_' ordinal='0' />
+              <column datatype='integer' name='year' ordinal='1' />
+              <column datatype='integer' name='month' ordinal='2' />
+              <column datatype='integer' name='day' ordinal='3' />
+              <column datatype='integer' name='hour' ordinal='4' />
+              <column datatype='integer' name='reltime' ordinal='5' />
+              <column datatype='integer' name='numlev' ordinal='6' />
+              <column datatype='string' name='p_src' ordinal='7' />
+              <column datatype='string' name='np_src' ordinal='8' />
+              <column datatype='integer' name='lat' ordinal='9' />
+              <column datatype='integer' name='lon' ordinal='10' />
+              <column datatype='integer' name='lvltyp1' ordinal='11' />
+              <column datatype='integer' name='lvltyp2' ordinal='12' />
+              <column datatype='integer' name='etime' ordinal='13' />
+              <column datatype='integer' name='press' ordinal='14' />
+              <column datatype='string' name='pflag' ordinal='15' />
+              <column datatype='integer' name='gph' ordinal='16' />
+              <column datatype='string' name='zflag' ordinal='17' />
+              <column datatype='integer' name='temp' ordinal='18' />
+              <column datatype='string' name='tflag' ordinal='19' />
+              <column datatype='integer' name='rh' ordinal='20' />
+              <column datatype='integer' name='dpdp' ordinal='21' />
+              <column datatype='integer' name='wdir' ordinal='22' />
+              <column datatype='integer' name='wspd' ordinal='23' />
+              <column datatype='datetime' name='date' ordinal='24' />
+              <column datatype='integer' name='actual_hours' ordinal='25' />
+              <column datatype='integer' name='minutes' ordinal='26' />
+              <column datatype='integer' name='seconds' ordinal='27' />
+              <column datatype='datetime' name='timestamp' ordinal='28' />
+              <column datatype='real' name='temp_f' ordinal='29' />
+              <column datatype='real' name='temp_k' ordinal='30' />
+              <column datatype='real' name='press_alt' ordinal='31' />
+              <column datatype='real' name='rh_ice' ordinal='32' />
+              <column datatype='string' name='issc' ordinal='33' />
+              <column datatype='real' name='floor' ordinal='34' />
+              <column datatype='real' name='ceiling' ordinal='35' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Upton, New York_issr2023.csv' table='[Upton, New York_issr2023#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='id_' ordinal='0' />
+              <column datatype='integer' name='year' ordinal='1' />
+              <column datatype='integer' name='month' ordinal='2' />
+              <column datatype='integer' name='day' ordinal='3' />
+              <column datatype='integer' name='hour' ordinal='4' />
+              <column datatype='integer' name='reltime' ordinal='5' />
+              <column datatype='integer' name='numlev' ordinal='6' />
+              <column datatype='string' name='p_src' ordinal='7' />
+              <column datatype='string' name='np_src' ordinal='8' />
+              <column datatype='integer' name='lat' ordinal='9' />
+              <column datatype='integer' name='lon' ordinal='10' />
+              <column datatype='integer' name='lvltyp1' ordinal='11' />
+              <column datatype='integer' name='lvltyp2' ordinal='12' />
+              <column datatype='integer' name='etime' ordinal='13' />
+              <column datatype='integer' name='press' ordinal='14' />
+              <column datatype='string' name='pflag' ordinal='15' />
+              <column datatype='integer' name='gph' ordinal='16' />
+              <column datatype='string' name='zflag' ordinal='17' />
+              <column datatype='integer' name='temp' ordinal='18' />
+              <column datatype='string' name='tflag' ordinal='19' />
+              <column datatype='integer' name='rh' ordinal='20' />
+              <column datatype='integer' name='dpdp' ordinal='21' />
+              <column datatype='integer' name='wdir' ordinal='22' />
+              <column datatype='integer' name='wspd' ordinal='23' />
+              <column datatype='datetime' name='date' ordinal='24' />
+              <column datatype='integer' name='actual_hours' ordinal='25' />
+              <column datatype='integer' name='minutes' ordinal='26' />
+              <column datatype='integer' name='seconds' ordinal='27' />
+              <column datatype='datetime' name='timestamp' ordinal='28' />
+              <column datatype='real' name='temp_f' ordinal='29' />
+              <column datatype='real' name='temp_k' ordinal='30' />
+              <column datatype='real' name='press_alt' ordinal='31' />
+              <column datatype='real' name='rh_ice' ordinal='32' />
+              <column datatype='string' name='issc' ordinal='33' />
+              <column datatype='integer' name='floor' ordinal='34' />
+              <column datatype='integer' name='ceiling' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='Buffalo, NY_issr2023.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='id_' />
+            <column datatype='integer' name='year' />
+            <column datatype='integer' name='month' />
+            <column datatype='integer' name='day' />
+            <column datatype='integer' name='hour' />
+            <column datatype='integer' name='reltime' />
+            <column datatype='integer' name='numlev' />
+            <column datatype='string' name='p_src' />
+            <column datatype='string' name='np_src' />
+            <column datatype='integer' name='lat' />
+            <column datatype='integer' name='lon' />
+            <column datatype='integer' name='lvltyp1' />
+            <column datatype='integer' name='lvltyp2' />
+            <column datatype='integer' name='etime' />
+            <column datatype='integer' name='press' />
+            <column datatype='string' name='pflag' />
+            <column datatype='integer' name='gph' />
+            <column datatype='string' name='zflag' />
+            <column datatype='integer' name='temp' />
+            <column datatype='string' name='tflag' />
+            <column datatype='integer' name='rh' />
+            <column datatype='integer' name='dpdp' />
+            <column datatype='integer' name='wdir' />
+            <column datatype='integer' name='wspd' />
+            <column datatype='datetime' name='date' />
+            <column datatype='integer' name='actual_hours' />
+            <column datatype='integer' name='minutes' />
+            <column datatype='integer' name='seconds' />
+            <column datatype='datetime' name='timestamp' />
+            <column datatype='real' name='temp_f' />
+            <column datatype='real' name='temp_k' />
+            <column datatype='real' name='press_alt' />
+            <column datatype='real' name='rh_ice' />
+            <column datatype='string' name='issc' />
+            <column datatype='real' name='floor' />
+            <column datatype='real' name='ceiling' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Buffalo, NY_issr2023.csv' table='[Buffalo, NY_issr2023#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='id_' ordinal='0' />
+              <column datatype='integer' name='year' ordinal='1' />
+              <column datatype='integer' name='month' ordinal='2' />
+              <column datatype='integer' name='day' ordinal='3' />
+              <column datatype='integer' name='hour' ordinal='4' />
+              <column datatype='integer' name='reltime' ordinal='5' />
+              <column datatype='integer' name='numlev' ordinal='6' />
+              <column datatype='string' name='p_src' ordinal='7' />
+              <column datatype='string' name='np_src' ordinal='8' />
+              <column datatype='integer' name='lat' ordinal='9' />
+              <column datatype='integer' name='lon' ordinal='10' />
+              <column datatype='integer' name='lvltyp1' ordinal='11' />
+              <column datatype='integer' name='lvltyp2' ordinal='12' />
+              <column datatype='integer' name='etime' ordinal='13' />
+              <column datatype='integer' name='press' ordinal='14' />
+              <column datatype='string' name='pflag' ordinal='15' />
+              <column datatype='integer' name='gph' ordinal='16' />
+              <column datatype='string' name='zflag' ordinal='17' />
+              <column datatype='integer' name='temp' ordinal='18' />
+              <column datatype='string' name='tflag' ordinal='19' />
+              <column datatype='integer' name='rh' ordinal='20' />
+              <column datatype='integer' name='dpdp' ordinal='21' />
+              <column datatype='integer' name='wdir' ordinal='22' />
+              <column datatype='integer' name='wspd' ordinal='23' />
+              <column datatype='datetime' name='date' ordinal='24' />
+              <column datatype='integer' name='actual_hours' ordinal='25' />
+              <column datatype='integer' name='minutes' ordinal='26' />
+              <column datatype='integer' name='seconds' ordinal='27' />
+              <column datatype='datetime' name='timestamp' ordinal='28' />
+              <column datatype='real' name='temp_f' ordinal='29' />
+              <column datatype='real' name='temp_k' ordinal='30' />
+              <column datatype='real' name='press_alt' ordinal='31' />
+              <column datatype='real' name='rh_ice' ordinal='32' />
+              <column datatype='string' name='issc' ordinal='33' />
+              <column datatype='real' name='floor' ordinal='34' />
+              <column datatype='real' name='ceiling' ordinal='35' />
+            </columns>
+          </relation>
+          <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Upton, New York_issr2023.csv' table='[Upton, New York_issr2023#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='id_' ordinal='0' />
+              <column datatype='integer' name='year' ordinal='1' />
+              <column datatype='integer' name='month' ordinal='2' />
+              <column datatype='integer' name='day' ordinal='3' />
+              <column datatype='integer' name='hour' ordinal='4' />
+              <column datatype='integer' name='reltime' ordinal='5' />
+              <column datatype='integer' name='numlev' ordinal='6' />
+              <column datatype='string' name='p_src' ordinal='7' />
+              <column datatype='string' name='np_src' ordinal='8' />
+              <column datatype='integer' name='lat' ordinal='9' />
+              <column datatype='integer' name='lon' ordinal='10' />
+              <column datatype='integer' name='lvltyp1' ordinal='11' />
+              <column datatype='integer' name='lvltyp2' ordinal='12' />
+              <column datatype='integer' name='etime' ordinal='13' />
+              <column datatype='integer' name='press' ordinal='14' />
+              <column datatype='string' name='pflag' ordinal='15' />
+              <column datatype='integer' name='gph' ordinal='16' />
+              <column datatype='string' name='zflag' ordinal='17' />
+              <column datatype='integer' name='temp' ordinal='18' />
+              <column datatype='string' name='tflag' ordinal='19' />
+              <column datatype='integer' name='rh' ordinal='20' />
+              <column datatype='integer' name='dpdp' ordinal='21' />
+              <column datatype='integer' name='wdir' ordinal='22' />
+              <column datatype='integer' name='wspd' ordinal='23' />
+              <column datatype='datetime' name='date' ordinal='24' />
+              <column datatype='integer' name='actual_hours' ordinal='25' />
+              <column datatype='integer' name='minutes' ordinal='26' />
+              <column datatype='integer' name='seconds' ordinal='27' />
+              <column datatype='datetime' name='timestamp' ordinal='28' />
+              <column datatype='real' name='temp_f' ordinal='29' />
+              <column datatype='real' name='temp_k' ordinal='30' />
+              <column datatype='real' name='press_alt' ordinal='31' />
+              <column datatype='real' name='rh_ice' ordinal='32' />
+              <column datatype='string' name='issc' ordinal='33' />
+              <column datatype='integer' name='floor' ordinal='34' />
+              <column datatype='integer' name='ceiling' ordinal='35' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id_]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>id_</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>day</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hour]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>hour</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reltime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reltime]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>reltime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numlev</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[numlev]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>numlev</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>p_src</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[p_src]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>p_src</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>np_src</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[np_src]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>np_src</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lvltyp1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lvltyp1]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>lvltyp1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lvltyp2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[lvltyp2]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>lvltyp2</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>etime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[etime]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>etime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>press</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[press]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>press</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pflag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[pflag]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>pflag</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gph</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gph]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>gph</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zflag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[zflag]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>zflag</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[temp]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>temp</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tflag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tflag]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>tflag</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rh</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rh]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>rh</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dpdp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dpdp]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>dpdp</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wdir</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wdir]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>wdir</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wspd</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wspd]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>wspd</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_hours]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>actual_hours</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minutes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minutes]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>minutes</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seconds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seconds]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>seconds</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_f</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_f]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>temp_f</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp_k</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp_k]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>temp_k</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>press_alt</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[press_alt]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>press_alt</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rh_ice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rh_ice]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>rh_ice</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>issc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[issc]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>issc</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floor]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>floor</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceiling</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ceiling]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>ceiling</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[Buffalo, NY_issr2023.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Station City' datatype='string' name='[Calculation_433753000485654529]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [id_] = &apos;#USM00072501&apos; THEN &apos;Upton, NY&apos;&#13;&#10;&#13;&#10;ELSEIF [id_] = &apos;#USM00072528&apos; THEN &apos;Buffalo, NY&apos;&#13;&#10;&#13;&#10;END' />
+      </column>
+      <column caption='Obervation Time' datatype='datetime' name='[Calculation_433753000489676804]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKETIME([hour],00,00)' />
+      </column>
+      <column caption='Release Time' datatype='datetime' name='[Calculation_433753000489918469]' role='dimension' type='ordinal'>
+        <calculation class='tableau' formula='MAKETIME(&#13;&#10;INT(LEFT(STR([reltime]),2)),&#13;&#10;INT(RIGHT(STR([reltime]),2)),&#13;&#10;00)' />
+      </column>
+      <column caption='Count of ISSRs' datatype='integer' name='[Calculation_433753000493395974]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [date],[Calculation_433753000489918469],[temp],[press_alt] : COUNT([date])}' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='Buffalo, NY_issr2023.csv' datatype='table' name='[__tableau_internal_object_id__].[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]' role='measure' type='quantitative' />
+      <column caption='Day' datatype='integer' name='[day]' role='dimension' type='quantitative' />
+      <column caption='Etime' datatype='integer' name='[etime]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='string' name='[id_]' role='dimension' type='nominal' />
+      <column caption='Issc' datatype='string' name='[issc]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='integer' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='integer' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Press Alt' datatype='real' name='[press_alt]' role='measure' type='quantitative' />
+      <column caption='Reltime' datatype='integer' name='[reltime]' role='measure' type='quantitative' />
+      <column caption='Temp' datatype='integer' name='[temp]' role='measure' type='quantitative' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/rebec/AIT690SkyGuardians/Dashboard/Upton_Buffalo_issr2023.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='03/03/2024 07:07:12 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Upton_Buffalo_issr2023' increment-value='%null%' refresh-type='create' rows-inserted='183101' timestamp-start='2024-03-03 19:07:07.933' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id_]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>day</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[day]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>day</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>31</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hour</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reltime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reltime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reltime</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>271</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numlev</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[numlev]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>numlev</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>579</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>p_src</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[p_src]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>p_src</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>np_src</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[np_src]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>np_src</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lat</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lat</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lon</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lon]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lon</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lvltyp1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lvltyp1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lvltyp1</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lvltyp2</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[lvltyp2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lvltyp2</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>etime</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[etime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>etime</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15904</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>press</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[press]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>press</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40685</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pflag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[pflag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pflag</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gph</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gph]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gph</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13815</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>zflag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[zflag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>zflag</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[temp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temp</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4931</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tflag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tflag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tflag</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rh</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rh</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6521</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dpdp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dpdp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dpdp</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1806</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wdir</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wdir]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wdir</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>981</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wspd</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wspd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wspd</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2402</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1148</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>actual_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[actual_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>actual_hours</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minutes</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[minutes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>minutes</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>seconds</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[seconds]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>seconds</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>60</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>timestamp</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>timestamp</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>32306</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temp_f</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temp_f]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temp_f</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4931</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temp_k</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temp_k]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temp_k</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4931</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>press_alt</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[press_alt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>press_alt</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40685</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rh_ice</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rh_ice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rh_ice</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5722</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>issc</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[issc]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>issc</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>floor</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[floor]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>floor</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ceiling</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ceiling]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ceiling</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Table Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Table Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Table Name</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Buffalo, NY_issr2023.csv+</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Buffalo, NY_issr2023.csv' id='Buffalo, NY_issr2023.csv_DD2B0D477CEC48B787E5DC818F0A79B7'>
+            <properties context=''>
+              <relation all='true' name='Buffalo, NY_issr2023.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='id_' />
+                  <column datatype='integer' name='year' />
+                  <column datatype='integer' name='month' />
+                  <column datatype='integer' name='day' />
+                  <column datatype='integer' name='hour' />
+                  <column datatype='integer' name='reltime' />
+                  <column datatype='integer' name='numlev' />
+                  <column datatype='string' name='p_src' />
+                  <column datatype='string' name='np_src' />
+                  <column datatype='integer' name='lat' />
+                  <column datatype='integer' name='lon' />
+                  <column datatype='integer' name='lvltyp1' />
+                  <column datatype='integer' name='lvltyp2' />
+                  <column datatype='integer' name='etime' />
+                  <column datatype='integer' name='press' />
+                  <column datatype='string' name='pflag' />
+                  <column datatype='integer' name='gph' />
+                  <column datatype='string' name='zflag' />
+                  <column datatype='integer' name='temp' />
+                  <column datatype='string' name='tflag' />
+                  <column datatype='integer' name='rh' />
+                  <column datatype='integer' name='dpdp' />
+                  <column datatype='integer' name='wdir' />
+                  <column datatype='integer' name='wspd' />
+                  <column datatype='datetime' name='date' />
+                  <column datatype='integer' name='actual_hours' />
+                  <column datatype='integer' name='minutes' />
+                  <column datatype='integer' name='seconds' />
+                  <column datatype='datetime' name='timestamp' />
+                  <column datatype='real' name='temp_f' />
+                  <column datatype='real' name='temp_k' />
+                  <column datatype='real' name='press_alt' />
+                  <column datatype='real' name='rh_ice' />
+                  <column datatype='string' name='issc' />
+                  <column datatype='real' name='floor' />
+                  <column datatype='real' name='ceiling' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Buffalo, NY_issr2023.csv' table='[Buffalo, NY_issr2023#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='id_' ordinal='0' />
+                    <column datatype='integer' name='year' ordinal='1' />
+                    <column datatype='integer' name='month' ordinal='2' />
+                    <column datatype='integer' name='day' ordinal='3' />
+                    <column datatype='integer' name='hour' ordinal='4' />
+                    <column datatype='integer' name='reltime' ordinal='5' />
+                    <column datatype='integer' name='numlev' ordinal='6' />
+                    <column datatype='string' name='p_src' ordinal='7' />
+                    <column datatype='string' name='np_src' ordinal='8' />
+                    <column datatype='integer' name='lat' ordinal='9' />
+                    <column datatype='integer' name='lon' ordinal='10' />
+                    <column datatype='integer' name='lvltyp1' ordinal='11' />
+                    <column datatype='integer' name='lvltyp2' ordinal='12' />
+                    <column datatype='integer' name='etime' ordinal='13' />
+                    <column datatype='integer' name='press' ordinal='14' />
+                    <column datatype='string' name='pflag' ordinal='15' />
+                    <column datatype='integer' name='gph' ordinal='16' />
+                    <column datatype='string' name='zflag' ordinal='17' />
+                    <column datatype='integer' name='temp' ordinal='18' />
+                    <column datatype='string' name='tflag' ordinal='19' />
+                    <column datatype='integer' name='rh' ordinal='20' />
+                    <column datatype='integer' name='dpdp' ordinal='21' />
+                    <column datatype='integer' name='wdir' ordinal='22' />
+                    <column datatype='integer' name='wspd' ordinal='23' />
+                    <column datatype='datetime' name='date' ordinal='24' />
+                    <column datatype='integer' name='actual_hours' ordinal='25' />
+                    <column datatype='integer' name='minutes' ordinal='26' />
+                    <column datatype='integer' name='seconds' ordinal='27' />
+                    <column datatype='datetime' name='timestamp' ordinal='28' />
+                    <column datatype='real' name='temp_f' ordinal='29' />
+                    <column datatype='real' name='temp_k' ordinal='30' />
+                    <column datatype='real' name='press_alt' ordinal='31' />
+                    <column datatype='real' name='rh_ice' ordinal='32' />
+                    <column datatype='string' name='issc' ordinal='33' />
+                    <column datatype='real' name='floor' ordinal='34' />
+                    <column datatype='real' name='ceiling' ordinal='35' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.08qxzrr1j0wdh40zv4fc103x95fd' name='Upton, New York_issr2023.csv' table='[Upton, New York_issr2023#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='string' name='id_' ordinal='0' />
+                    <column datatype='integer' name='year' ordinal='1' />
+                    <column datatype='integer' name='month' ordinal='2' />
+                    <column datatype='integer' name='day' ordinal='3' />
+                    <column datatype='integer' name='hour' ordinal='4' />
+                    <column datatype='integer' name='reltime' ordinal='5' />
+                    <column datatype='integer' name='numlev' ordinal='6' />
+                    <column datatype='string' name='p_src' ordinal='7' />
+                    <column datatype='string' name='np_src' ordinal='8' />
+                    <column datatype='integer' name='lat' ordinal='9' />
+                    <column datatype='integer' name='lon' ordinal='10' />
+                    <column datatype='integer' name='lvltyp1' ordinal='11' />
+                    <column datatype='integer' name='lvltyp2' ordinal='12' />
+                    <column datatype='integer' name='etime' ordinal='13' />
+                    <column datatype='integer' name='press' ordinal='14' />
+                    <column datatype='string' name='pflag' ordinal='15' />
+                    <column datatype='integer' name='gph' ordinal='16' />
+                    <column datatype='string' name='zflag' ordinal='17' />
+                    <column datatype='integer' name='temp' ordinal='18' />
+                    <column datatype='string' name='tflag' ordinal='19' />
+                    <column datatype='integer' name='rh' ordinal='20' />
+                    <column datatype='integer' name='dpdp' ordinal='21' />
+                    <column datatype='integer' name='wdir' ordinal='22' />
+                    <column datatype='integer' name='wspd' ordinal='23' />
+                    <column datatype='datetime' name='date' ordinal='24' />
+                    <column datatype='integer' name='actual_hours' ordinal='25' />
+                    <column datatype='integer' name='minutes' ordinal='26' />
+                    <column datatype='integer' name='seconds' ordinal='27' />
+                    <column datatype='datetime' name='timestamp' ordinal='28' />
+                    <column datatype='real' name='temp_f' ordinal='29' />
+                    <column datatype='real' name='temp_k' ordinal='30' />
+                    <column datatype='real' name='press_alt' ordinal='31' />
+                    <column datatype='real' name='rh_ice' ordinal='32' />
+                    <column datatype='string' name='issc' ordinal='33' />
+                    <column datatype='integer' name='floor' ordinal='34' />
+                    <column datatype='integer' name='ceiling' ordinal='35' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Days ISSRs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Upton_Buffalo_issr2023' name='federated.0iil8yl0vug70z12h64df012vx1w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iil8yl0vug70z12h64df012vx1w'>
+            <column caption='Station City' datatype='string' name='[Calculation_433753000485654529]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [id_] = &apos;#USM00072501&apos; THEN &apos;Upton, NY&apos;&#13;&#10;&#13;&#10;ELSEIF [id_] = &apos;#USM00072528&apos; THEN &apos;Buffalo, NY&apos;&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column-instance column='[date]' derivation='CountD' name='[ctd:date:qk]' pivot='key' type='quantitative' />
+            <column datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Id' datatype='string' name='[id_]' role='dimension' type='nominal' />
+            <column caption='Issc' datatype='string' name='[issc]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_433753000485654529]' derivation='None' name='[none:Calculation_433753000485654529:nk]' pivot='key' type='nominal' />
+            <column-instance column='[issc]' derivation='None' name='[none:issc:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_433753000485654529:nk]' member='&quot;Upton, NY&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]'>
+            <groupfilter function='member' level='[none:issc:nk]' member='&quot;yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</column>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='41' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0iil8yl0vug70z12h64df012vx1w].[ctd:date:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='28'><![CDATA[<[federated.0iil8yl0vug70z12h64df012vx1w].[ctd:date:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{60D0E916-50F2-4BB3-A6B8-F9875E684E95}' />
+    </worksheet>
+    <worksheet name='ISSR Date Time Table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Upton_Buffalo_issr2023' name='federated.0iil8yl0vug70z12h64df012vx1w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iil8yl0vug70z12h64df012vx1w'>
+            <column caption='Station City' datatype='string' name='[Calculation_433753000485654529]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [id_] = &apos;#USM00072501&apos; THEN &apos;Upton, NY&apos;&#13;&#10;&#13;&#10;ELSEIF [id_] = &apos;#USM00072528&apos; THEN &apos;Buffalo, NY&apos;&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Etime' datatype='integer' name='[etime]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id_]' role='dimension' type='nominal' />
+            <column caption='Issc' datatype='string' name='[issc]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='MDY' name='[md:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_433753000485654529]' derivation='None' name='[none:Calculation_433753000485654529:nk]' pivot='key' type='nominal' />
+            <column-instance column='[issc]' derivation='None' name='[none:issc:nk]' pivot='key' type='nominal' />
+            <column-instance column='[reltime]' derivation='None' name='[none:reltime:ok]' pivot='key' type='ordinal' />
+            <column caption='Reltime' datatype='integer' name='[reltime]' role='measure' type='quantitative' />
+            <column-instance column='[etime]' derivation='Sum' name='[sum:etime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_433753000485654529:nk]' member='&quot;Upton, NY&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]'>
+            <groupfilter function='member' level='[none:issc:nk]' member='&quot;yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</column>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0iil8yl0vug70z12h64df012vx1w].[none:reltime:ok]' value='116' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Polygon' />
+            <encodings>
+              <lod column='[federated.0iil8yl0vug70z12h64df012vx1w].[sum:etime:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0iil8yl0vug70z12h64df012vx1w].[md:date:ok] / [federated.0iil8yl0vug70z12h64df012vx1w].[none:reltime:ok])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E395F0E3-C25A-4EF1-9766-BEB6DDB65EB2}' />
+    </worksheet>
+    <worksheet name='Number of ISSR Obeservations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Upton_Buffalo_issr2023' name='federated.0iil8yl0vug70z12h64df012vx1w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0iil8yl0vug70z12h64df012vx1w'>
+            <column caption='Station City' datatype='string' name='[Calculation_433753000485654529]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [id_] = &apos;#USM00072501&apos; THEN &apos;Upton, NY&apos;&#13;&#10;&#13;&#10;ELSEIF [id_] = &apos;#USM00072528&apos; THEN &apos;Buffalo, NY&apos;&#13;&#10;&#13;&#10;END' />
+            </column>
+            <column caption='Release Time' datatype='datetime' name='[Calculation_433753000489918469]' role='dimension' type='ordinal'>
+              <calculation class='tableau' formula='MAKETIME(&#13;&#10;INT(LEFT(STR([reltime]),2)),&#13;&#10;INT(RIGHT(STR([reltime]),2)),&#13;&#10;00)' />
+            </column>
+            <column caption='Count of ISSRs' datatype='integer' name='[Calculation_433753000493395974]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED [date],[Calculation_433753000489918469],[temp],[press_alt] : COUNT([date])}' />
+            </column>
+            <column datatype='datetime' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Id' datatype='string' name='[id_]' role='dimension' type='nominal' />
+            <column caption='Issc' datatype='string' name='[issc]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_433753000485654529]' derivation='None' name='[none:Calculation_433753000485654529:nk]' pivot='key' type='nominal' />
+            <column-instance column='[issc]' derivation='None' name='[none:issc:nk]' pivot='key' type='nominal' />
+            <column caption='Press Alt' datatype='real' name='[press_alt]' role='measure' type='quantitative' />
+            <column caption='Reltime' datatype='integer' name='[reltime]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_433753000493395974]' derivation='Sum' name='[sum:Calculation_433753000493395974:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='integer' name='[temp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:Calculation_433753000485654529:nk]' member='&quot;Upton, NY&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]'>
+            <groupfilter function='member' level='[none:issc:nk]' member='&quot;yes&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</column>
+            <column>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='41' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0iil8yl0vug70z12h64df012vx1w].[sum:Calculation_433753000493395974:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='28'><![CDATA[<[federated.0iil8yl0vug70z12h64df012vx1w].[sum:Calculation_433753000493395974:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{75782BF7-6FB9-4E3E-82E0-F424E8A3B522}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='ISSR Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Yu Gothic UI Semibold' fontsize='28'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1709' maxwidth='1790' minheight='1709' minwidth='1790' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='3294' id='7' type-v2='title' w='99106' x='447' y='468'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='93154' id='13' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='33053' x='33499' y='6378'>
+            <zone h='46577' id='37' param='vert' type-v2='layout-flow' w='33016' x='33520' y='6378'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='20' />
+                <format attr='padding' value='0' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+            <zone h='46577' id='23' param='vert' type-v2='layout-flow' w='33016' x='33520' y='52955'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='20' />
+                <format attr='margin-top' value='10' />
+                <format attr='padding' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='93154' id='22' param='vert' type-v2='layout-flow' w='33001' x='66552' y='6378'>
+            <zone h='93154' id='25' param='vert' type-v2='layout-flow' w='33001' x='66552' y='6378'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='20' />
+                <format attr='margin-right' value='40' />
+                <format attr='padding' value='4' />
+                <format attr='background-color' value='#ffffff' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='2616' id='26' param='horz' type-v2='layout-flow' w='49553' x='50000' y='3762' />
+          <zone forceUpdate='true' h='2616' id='27' type-v2='text' w='49553' x='447' y='3762'>
+            <formatted-text>
+              <run bold='true' fontname='Yu Gothic Light' fontsize='12'>Select Station:</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='93154' id='42' param='vert' type-v2='layout-flow' w='33052' x='447' y='6378'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='20' />
+              <format attr='margin-left' value='40' />
+              <format attr='background-color' value='#ffffff' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5ead7' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontname='Yu Gothic UI Semibold' fontsize='28'>&lt;Sheet Name&gt;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='48' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99064' id='47' param='vert' type-v2='layout-flow' w='99106' x='447' y='468'>
+                <zone h='3294' id='7' type-v2='title' w='99106' x='447' y='468'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='2616' id='27' type-v2='text' w='49553' x='447' y='3762'>
+                  <formatted-text>
+                    <run bold='true' fontname='Yu Gothic Light' fontsize='12'>Select Station:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5ead7' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{092543FE-0F85-4BF6-BB01-7F834E173FD3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='ISSR Analysis'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{264FCA49-B158-4DBD-9229-08BC0DCC2C0A}' />
+    </window>
+    <window class='worksheet' name='ISSR Date Time Table'>
+      <cards>
+        <edge name='left'>
+          <strip size='300'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Table Name:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:id_:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:month:qk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:Calculation_433753000486154242:ok]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:Calculation_433753000489676804:ok]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:Calculation_433753000489918469:ok]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:date:ok]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:timestamp:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{96A6D240-1597-4B70-B0EB-A11EBC425CBD}' />
+    </window>
+    <window class='worksheet' name='Days ISSRs'>
+      <cards>
+        <edge name='left'>
+          <strip size='244'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:Calculation_433753000486154242:ok]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3A8F3666-8801-4CB1-9E96-A0B11EAFB877}' />
+    </window>
+    <window class='worksheet' name='Number of ISSR Obeservations'>
+      <cards>
+        <edge name='left'>
+          <strip size='244'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]' type='filter' />
+            <card mode='dropdown' param='[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:Calculation_433753000485654529:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[none:issc:nk]</field>
+            <field>[federated.0iil8yl0vug70z12h64df012vx1w].[yr:Calculation_433753000486154242:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{38B82528-FE3E-43CF-8735-2C0C495C0291}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='45' name='Days ISSRs' width='64'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='ISSR Analysis' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAIsklEQVR4nO3ceXCU9R3H8c+z2dyQk3IT0IKE4RClAYRKKWUUaquVlorjgUxbQAoRBqoc
+      ZThFrnag1nI4KjjTAx1TK+hAMSWUQwYqt+G+MQkkIQlJSLLX0z8CwXAM4qAQv+/XP9nZ/e2z
+      T5553vucieO6rivAKK8k0QCs8l56UFFw4HbOB3BbeG73DAC3EwHAtDoRQEXZee05eOJLjXVD
+      IeWeKRCHNfgyvFc+kfnhSp0KxGvwow8qe9d2vbtqvc6VVqpz954a8rNeOrh3l1Z8sE4F5y+o
+      Q5fuGjrwh/rLn17T/s9L5DgetevUWUOe6K9Ir1NruqFAhWbOXKA23froyf7dbmomzxzdp8mL
+      MvX+ook3HFucc1gjJr6p5W/MVlz4TX0MDLoqgLO5OTrhD8hXnKuxUxZpzIQX1LZJgorL/QqW
+      F2js5Fc1bFy6OrVI1rnSSknSkUNH1HfQUHVuHq3p0+cruVmKBvbuUGu6h3Z9qv2fn9POjDX6
+      xcNdFe5xrnH2yZHj1D4r5TiXQ7r0vONc673VEpq1UcbyVyTnyrNb1dMGvuiqAGo4jhzHVSDk
+      UUpKc7VyHAXKCuQ4rvxBqUVKM7V0HMkNSZJiYmLVvHlj1Y+JULi39mRd19WatRv12C+f1Mb3
+      3tLWA3nq2a6J/v3PFVqx6ZiSw/3ad+yMxo0fq16dWuiVl+cqp8inogsBTZv6O136Ij/46SZN
+      eD1L7yyepMD5fD09crbmvTxaCxa8rip51TGthwb3vksDRi1Wxrtz9cGyZVq77Yhi6sVq+rSJ
+      So7+uhYj6qrrHgNExjfW/CnD9d6bSzVk9CztO5Evb71kzZs+Sqv/tkzPjpqhPUfzasYvWrhQ
+      A55KV0rXh/WTnqm1puUvK1TWrtPq3aOT+ny/i1Znbq55LeCJ0qxZk/X8z3toVeYncpwwjRyT
+      rukTR6pD02hlbt5bM7ZN5++pQSBP2adKtHPbNrVNe0D5R7JV5MRrzozxGjGob83YkL9KH2Vu
+      1nPDh+nPcyaw8uOarn8Q7Dhqf1+a3lj6Rw3seZdemrlIATlK7Xifliyer8F922n81NdUdXEv
+      4/kX0jVmcH9t37FHgWDt3ZMtGzaqpNKvmdNm68NNn2nLhk0qrqrecjRq0ljhHkdJyYny+QIq
+      yjupFyfO0dsZa1VUWqmqyqrLM+uNUr/eXbRhy05lbdqu/n176v4evfSj9g017LfjtXzlpstj
+      I6I0Lv3XynhriUZMWqjCct8tXGz4trhuAGVnT+tfH3+iY6dy5ToeBQNBVRblKWPNZh07mauQ
+      PAoGAvrC3rp69fupWnkL9fbKy9/wrhvS6szNevq5Z/Vi+q80ZdJopSYFlbX12hfe9n+2V2HJ
+      KRryRH95Fbzq9T59f6At69bqUKFHXVObKu9MgX78+AD9fvhjen/1f2vGhfxVCo9rrNkzX5J7
+      9rCyj+d/pQWEb7erjgEaNW0mfyBe4VHROpa9R1mZ65TYoKHmTRmhyIhInT6UrQ1ZWYpP+o7m
+      zkhXlCO1uaeNkupHyfGEafjQZ7TwH+tV+sgDqh/hUVVpvgJRjfRI325qGFv9cQMf76e9p08p
+      rXlDtb64jscnJuuelmG6v3uaNu78q/6w5B21v7ezohslKqpetDq2bVk9rnErtaofVJO0BxXh
+      kSpLi/Tq0r/LExmriSOfUliEV/d2aC2PXH380SodLyhT2kOPqltq029uqaLOcNxqdeJWCNd1
+      5Ssv1m9GTdPUebN0d4OY2z1LqOPqxIWwSw7v2KpnRk7XQwMHsfLjlqhTWwDgVqtTWwDgViMA
+      mEYAMO3KexZqzutfugen+n6a691H48p1JVeShxttUAfV2gK4IZ/WZv1P23cfUtB1FQq5yt6x
+      W8V+V6FQSK5b/bP4TI5O5JfLDYX0n/VbtWP3AR09fFhFFdWvh4JB7d13VIXnSqrf47o173Uv
+      PgbuBLXOArmuq6NHTqoq6Kqk8KxO55coKSFBUbGRyss5q6SkRMXExSncV6qqmEbq3q6pjh8/
+      qQpfSKWFeYpr9l2dPnxQTmQ9VZRfUHx8jNyAX343TF755AZDatO+g5ITYhUdHna7f3fgil2g
+      oE8FJeWqKC9VWGSU2qW2VlVJifzecLVufbci5FOJ31ViQpxyKkKSG1RBUZl8FRcUFROrgtwc
+      uVHxivBKTqRHIdeRR9W7U96IGDWP98ofvLjPBNwBuA4A0zgLBNMIAKYRAEwjAJhGADCNAGAa
+      AcA0AoBp1/+/QNcRmZDydcwH6ig36JevNPeG4xxPuCLimnwDc3RzbjqAsHD+FBGXhZyqGw+S
+      JMe5I9cddoFgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhG
+      ADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0A
+      YBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHA
+      NAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBp
+      BADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMI
+      AKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEA
+      TCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCNAGAaAcA0AoBpBADTCACmEQBMIwCY
+      RgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoBwDQCgGkEANMIAKYRAEwjAJhGADCN
+      AGAaAcA0AoBpBADTCACmEQBMIwCYRgAwjQBgGgHANAKAaQQA0wgAphEATCMAmEYAMI0AYBoB
+      wDQCgGkEANMIAKYRAEz7P44wof2Hirs0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='ISSR Date Time Table' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='45' name='Number of ISSR Obeservations' width='84'>
+      iVBORw0KGgoAAAANSUhEUgAAAFQAAAAtCAYAAAAwRkzIAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAEvElEQVRoge2bf0zUZRyAH/POhcBVHsKRNkQZRDR04/wBKSZOyNAMGSFR2SLDQTihGTWX
+      zDVzKAMVsFjhQnc1KpQyMGRchRNLwIKNKYrAjTYP5HQ7ATfuHP1x/rqTC/BebfX9Pn+9u8+9
+      n3v33Pd938+9727SyMjICDLCeOTfHsD/DVmoYGShgpGFCkYWKhhZqGBkoYKRhQpGFioYWahg
+      ZKGCkYUKRhYqGFmoYGShgpGFCuYhCrUy1FVLwTurCNdqSS4zCMk63NdE+bYklmi1aHPqXUzW
+      w4myT0hbF8uycC1arRZt+DJi16VRcPQcV6xjp1C4NoLxYOXKuWOU7Mjnh7PXsAjMPNxzguVx
+      mVwXkMt8uoDU93RccExmuUZvx2l0219DVxROxu4drA9VOc3zAIVaufJHBXt2FVF9a5RuGjRK
+      I0aza5mHe2op/ngv35wxYlFq0KiMGE33n89cn0NCVhUmQKlZzJvZ75K0MADVFLAOXaX75Jfs
+      zNPRYjpFYWoKfXtL2bJgdKkPYMoP09dUzrakZURv2E31heu4zVxA8s5vqf+5mATf+817Z8lY
+      GvchujNG8Aym+tcfeX+RC8M16MjItsl0m5uJrnIPqUtsMgEUU58gYEUmpUe/Ii1ECZYuyj/I
+      Re/koRAv1PA1mRt3U33Bimfwi2z5rJq6yv1krvBnqkvzoYHcBJtIxc0vqK72EN5TXMk5SE1x
+      EW0WQL2G3H3JzHY2ximBvFW4gxgVYK4ht6SZ0ZbUBzDlH8X3+Q1sTH+dcP+pAj9AgUdwPDnZ
+      KcQ8641LHm9h+I6DegugJCoriwj3Md6vimJT+nz0OxsxHS6nLi2MGIc+4oX6JZKXJzwrEMGW
+      QxFCMxp+OU47gGotiY5mnOCzJonovEaqLHoqfzIRE6+2i0u4DjXR9Fs7AKqVUYSNt5siguXR
+      SgAaG35n0CEsYaFttDbaWuFhcyfQT0FI6Dxb83wXjtW0dIUauugAIIjAORNb+dSzZqMCuNRJ
+      t8MjKl2h/X1cAkDDdK8J9vXyxlb9Gbncbx+SrtDBAWylpAce49uP7uA1HQ0AVm7csA9JV6gr
+      uHvgAcBFDH/Zh2Sh98PgAAMAzMFvpn1IukJvr4MDDDjWPmPRfxkjAAomT7YPSVfoY48zDRht
+      YxmT2xvaLJ6aYR+SrtAZ/gQoAdo5f3EcB513YerutG1ovk+icai4pCuUIJ65WZ+fam6ZQD8r
+      ba1/2pqhwQQ6RCUsVI12URAA5mN6msfbzdpA3XHbMfnS5xbecxgiYaHg98JLzAMwH6a8Znw7
+      U2/FQaosgDKK6KX3FrCSForPKt6IVQEW9Pn5NIzl1KxnX4ltuqvXJrJ8lB8E0haKO5Fp6cxX
+      Aqbvyd6ko9PZ/jR8ngMZW6kxA+pYtqaGjXr2KXGhgE88ubmxqIHrLQUkv7yZkhMdmIdtYevQ
+      VTpqC0hZ/Sr72yygDCHj04+IdHJPN0ns/5TqydFmUeVilqCMCnTr/e56xUBZcjyF7S4kjc2n
+      aXuk07C5tYTM9M9p+YcrVKVmMZvzd5EY6Py+4CFcI/83UIWmUloXR9ORLzhw5CRnDb1cswBK
+      T3yCw1gd9zavrHyaaWMYE/yEyshrqGBkoYL5GxIadVuZn8ZqAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
