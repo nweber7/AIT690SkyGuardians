@@ -1,7 +1,7 @@
 # DAEN690SkyGuardians
-DAEN 690 Capstone Project: AIRSPACE ICE SUPER SATURATED REGIONS CHARACTERISTICS (ISSRC) AND PREDICTIONS DASHBOARD
+## DAEN 690 Capstone Project: AIRSPACE ICE SUPER SATURATED REGIONS CHARACTERISTICS (ISSRC) AND PREDICTIONS DASHBOARD
 
-ABOUT THE PROJECT:
+### ABOUT THE PROJECT:
 
 Problem Description: Aircraft induced clouds (also known as contrails) contribute 2% to Earth’s anthropogenic global warming. Contrails effect on global warming is due to its contribution to radiative forcing through its ability to trap outgoing radiation emitted by the Earth's surface, creating a warming effect. Unlike CO2 and other greenhouse gases that take approximately 20 years from the date it is emitted to affect the Earth's temperature; the effect of contrails is immediate. Ice supersaturated regions (ISSR) create atmospheric conditions conducive to the formation and spreading of contrails. Although techniques such as navigation avoidance would allow for a reduction in contrail generation, little is known about ISSRs, especially as it relates to locating and predicting when they form. Until there is a better understanding of ISSR size, depth, location, time of day, and seasonal trends, the problem will continue to persist for airline companies to effectively implement navigation avoidance techniques to lower their environmental impact. 
 
@@ -18,19 +18,19 @@ Project Goals: The following are the two main goals of the project.
     - Through time series modeling, forecast future days of ice supersaturated conditions for that region where the weather station is located. 
     - Through classification modeling, determine if one weather station’s variables such as instances that localized area experienced ISSC and the vertical depth of those regions could predict instances of ISSC at the other weather station. 
 
-BUILT WITH:
+### BUILT WITH:
 
 •	Python 
 
 •	Tableau 
 
-DATA SOURCE:
+### DATA SOURCE:
 
 National Oceanic and Atmospheric Administration Integrated Global Radiosonde Archive (IRGA) Sounding Data: https://www.ncei.noaa.gov/products/weather-balloon/integrated-global-radiosonde-archive
 
-GETTING STARTED:
+### GETTING STARTED:
 
-Navigation: The main branch features the following folders:
+#### Navigation: The main branch features the following folders:
 
 - README
     - Overview of the project and GitHub repository.
@@ -47,7 +47,7 @@ Navigation: The main branch features the following folders:
 - Modeling
    - This was where the code for the modeling was located. 
 
-Instructions: 
+#### Instructions: 
 
 Data Download:
 
@@ -80,11 +80,11 @@ There are three files in the Main Code file. The following are the instructions 
     - Input file paths for both Buffalo and Upton
     - Run code
 
-INTERACTIVE DASHBOARD:
+### INTERACTIVE DASHBOARD:
 
 The interactive dashboard can be found following this link:
 https://public.tableau.com/app/profile/rebecca.conn7255/viz/ISSRDashboard/ISSRAnalysis
 
-ACKNOWLEDGMENTS: 
+### ACKNOWLEDGMENTS: 
 
 The research group for this project was Data Analytics and Engineering Students studying at George Mason University. The instructor for this course was Professor Brett Berlin. The sponsor of this project was Dr. Lance Sherry, the Director at the Center for Air Transportation Systems Research at George Mason University.  
