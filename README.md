@@ -51,7 +51,7 @@ National Oceanic and Atmospheric Administration Integrated Global Radiosonde Arc
 - ISSRC Stations Code
   - Code used to narrow down our search for two weather stations that fit the criteria of being located in the Northeast region of North America, within a few hundred miles apart from one another, and still actively recording data in 2024. 
 - MAINCODE
-   - This is the finalized preprocessing and data visualization code that was used for the Tableau interactive dashboard as well as finalized modeling code.
+   - This is the finalized preprocessing and data visualization code that was used for the Tableau interactive dashboard and finalized modeling code.
 - Modeling
    - This was where the code for the modeling was located. 
 
