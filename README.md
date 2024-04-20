@@ -3,6 +3,8 @@
 
 ### ABOUT THE PROJECT:
 
+![image](https://github.com/nweber7/DAEN690SkyGuardians/assets/99131499/23af4c6b-aaeb-4822-bc36-3e894111b871)
+
 Problem Description: Aircraft induced clouds (also known as contrails) contribute 2% to Earth’s anthropogenic global warming. Contrails effect on global warming is due to its contribution to radiative forcing through its ability to trap outgoing radiation emitted by the Earth's surface, creating a warming effect. Unlike CO2 and other greenhouse gases that take approximately 20 years from the date it is emitted to affect the Earth's temperature; the effect of contrails is immediate. Ice supersaturated regions (ISSR) create atmospheric conditions conducive to the formation and spreading of contrails. Although techniques such as navigation avoidance would allow for a reduction in contrail generation, little is known about ISSRs, especially as it relates to locating and predicting when they form. Until there is a better understanding of ISSR size, depth, location, time of day, and seasonal trends, the problem will continue to persist for airline companies to effectively implement navigation avoidance techniques to lower their environmental impact. 
 
 Project Goals: The following are the two main goals of the project.
