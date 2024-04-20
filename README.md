@@ -37,6 +37,7 @@ o	This was where the code for the modeling was located.
 Instructions: 
 Data Download:
 1.	Access the data by clicking the NOAA IRGA link from above and navigate to the Sounding Data section on that page.
+![image](https://github.com/nweber7/DAEN690SkyGuardians/assets/99131499/e1528feb-79b4-4d58-a53b-b76f28e27c9d)
  
 2.	Download the following zip files:
 a.	Buffalo = USM00072528-data.txt
