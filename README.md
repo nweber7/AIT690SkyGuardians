@@ -19,6 +19,9 @@ Project Goals: The following are the two main goals of the project.
     - A stacked bar chart of the occurrences of ISSCs by month and time window. AM represents Midnight and PM represents Noon launches of radiosondes.
     - A pressure altitude chart showing the daily floor and ceiling of the ISSRs. When hovering over the chart, the temperature and relative humidity to ice to pressure altitude chart will be shown. 
     - A comparison page, which compares both Buffalo and Upton.
+
+![image](https://github.com/nweber7/DAEN690SkyGuardians/assets/99131499/01bf3c49-e5ca-4c97-9774-793d758d06e4)
+
 2.	Through machine learning, answer the following questions:
     - Through time series modeling, forecast future days of ice supersaturated conditions for that region where the weather station is located. 
     - Through classification modeling, determine if one weather station’s variables such as instances that localized area experienced ISSC and the vertical depth of those regions could predict instances of ISSC at the other weather station. 
