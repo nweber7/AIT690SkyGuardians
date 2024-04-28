@@ -10,6 +10,8 @@ Problem Description: Aircraft induced clouds (also known as contrails) contribut
 ![image](https://github.com/nweber7/DAEN690SkyGuardians/assets/99131499/f8771cdd-7926-40ff-a9dc-87671c6f4486)
 
 
+Source: NOAA's Chemical and Science Laboratory - https://csl.noaa.gov/news/2020/287_0903.html
+
 Project Goals: The following are the two main goals of the project.
 
 1.	Create an interactive dashboard which visualizes past ice supersaturated conditions from the two selected weather stations which are Buffalo and Upton, NY. Visualizations represented in the interactive dashboard would include:
